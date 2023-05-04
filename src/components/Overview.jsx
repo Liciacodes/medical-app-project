@@ -10,11 +10,11 @@ export const Overview = () => {
   return (
     <div className="flex flex-col gap-3">
       <DashboardStats />
-      <div className="flex  flex-col lg:flex-row gap-6 w-full">
+      <div className="flex  flex-col lg:flex-row gap-4 ">
         <ChartCard />
         <DoughnutChart2 />
       </div>
-      <div className="flex flex-col lg:flex-row gap-8 w-full">
+      <div className="flex flex-col lg:flex-row gap-4">
         <TimeAdmitted />
         <PatientByDivision />
         <ThisMonth />
