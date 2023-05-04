@@ -48,7 +48,6 @@ export const ThisMonth = () => {
         backgroundColor: "white",
         borderWidth: 2,
         tension: 0.4,
-        borderWidth: 2,
         pointRadius: 0,
       },
     ],

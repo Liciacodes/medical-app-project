@@ -1,6 +1,14 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
-import Chart from "chart.js/auto";
+
+import {
+  Chart as ChartJS,
+  BarElement,
+  LinearScale,
+  CategoryScale,
+  PointElement,
+} from "chart.js";
+ChartJS.register(BarElement, LinearScale, CategoryScale, PointElement);
 
 export const BarChart = () => {
   const options = {
@@ -71,7 +79,7 @@ export const BarChart = () => {
   return (
     <div className="">
       <p className="mb-4 font-bold">Outpatients vs. Inpatients Trends</p>
-      <div className="w-[80%] md:w-[500px] lg:w-[750px] h-[15rem]">
+      <div className="w-[80%] md:w-[300px] lg:w-[750px] h-[15rem]">
         <Bar data={barChartData} options={options} />
       </div>
     </div>

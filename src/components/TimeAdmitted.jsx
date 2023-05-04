@@ -1,7 +1,15 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
 import { AiOutlineDown } from "react-icons/ai";
-import Chart from "chart.js/auto";
+
+import {
+  Chart as ChartJS,
+  LineElement,
+  LinearScale,
+  CategoryScale,
+  PointElement,
+} from "chart.js";
+ChartJS.register(LineElement, LinearScale, CategoryScale, PointElement);
 
 export const TimeAdmitted = () => {
   const options = {

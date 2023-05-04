@@ -1,6 +1,7 @@
-import { AiOutlineDown } from "react-icons/ai";
 import { Doughnut } from "react-chartjs-2";
-import Chart from "chart.js/auto";
+
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const DoughnutChart2 = () => {
   const options = {
