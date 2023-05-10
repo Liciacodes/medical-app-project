@@ -8,13 +8,13 @@ import { ThisMonth } from "./ThisMonth";
 
 export const Overview = () => {
   return (
-    <div className="flex flex-col gap-3 ">
+    <div className="flex flex-col gap-2 flex-wrap lg:gap-3">
       <DashboardStats />
-      <div className="flex  flex-col lg:flex-row gap-4 ">
+      <div className="flex flex-col lg:flex-row gap-4  min-w-0">
         <ChartCard />
         <DoughnutChart2 />
       </div>
-      <div className="flex flex-col lg:flex-row gap-4">
+      <div className="flex flex-col lg:flex-row gap-4  min-w-0">
         <TimeAdmitted />
         <PatientByDivision />
         <ThisMonth />

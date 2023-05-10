@@ -67,7 +67,7 @@ export const BarChart = () => {
         barPercentage: 0.5,
       },
       {
-        label: " Inpatient Trends",
+        label: "Inpatient Trends",
         data: [1500, 1900, 2000, 3000, 3500, 4500],
         borderRadius: 10,
         backgroundColor: "#713bdb",
@@ -77,10 +77,10 @@ export const BarChart = () => {
     ],
   };
   return (
-    <div className="">
+    <div className="w-[75%] h-[15rem] sm:w-full">
       <p className="mb-4 font-bold">Outpatients vs. Inpatients Trends</p>
-      <div className="w-[80%] md:w-[300px] lg:w-[750px] h-[15rem]">
-        <Bar data={barChartData} options={options} />
+      <div className="w-full h-full">
+        <Bar data={barChartData} options={options} width={550} height={200} />
       </div>
     </div>
   );

@@ -39,11 +39,11 @@ export const DoughnutChart = () => {
     <div className="lg:mt-4 md:mt-4 ">
       <div className="flex items-center lg:mb-12 lg:justify-end justify-start gap-1 px-2 mb-2 ">
         <p className="text-sm text-[#b2b7c5] font-medium">
-          Show <span className="font-semibold text-black">by months</span>
+          Show <span className="font-semibold text-black ">by months</span>
         </p>
         <AiOutlineDown size={15} className="text-[#b2b7c5]" />
       </div>
-      <div className="w-[80%] md:w-[200px] lg:w-[200px] h-[12rem] md:mt-6 ">
+      <div className="w-[80%] md:w-[200px] lg:w-[200px] h-[12rem] md:mt-6 lg:mt-2 sm:ml-0 flex justify-center items-center">
         <Doughnut data={doughnutChartData} options={options}></Doughnut>
       </div>
     </div>

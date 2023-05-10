@@ -36,9 +36,9 @@ export const DoughnutChart2 = () => {
     ],
   };
   return (
-    <div className="w-full lg:w-[25%] bg-white rounded-lg shadow-gray-300 shadow-sm py-4 px-3  h-[20rem]">
+    <div className="w-full lg:w-[24%] bg-white rounded-lg shadow-gray-300 shadow-sm py-3 px-6  h-[20rem]">
       <p className="font-bold mb-10">Patients by Gender</p>
-      <div className="ml-6 mt-14 w-[80%] md:w-[800px] lg:w-[200px] h-[12rem]">
+      <div className="mt-14 w-[80%] md:w-[800px] lg:w-[200px] h-[12rem] flex justify-center ">
         <Doughnut data={doughnutChartData} options={options} />
       </div>
     </div>

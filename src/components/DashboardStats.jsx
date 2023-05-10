@@ -5,7 +5,7 @@ import { CiMedicalClipboard } from "react-icons/ci";
 
 const DashboardStats = () => {
   return (
-    <div className="flex gap-6 w-[100%] lg:w-full flex-col lg:flex-row">
+    <div className="flex gap-6 w-[100%]  flex-col lg:flex-row flex-wrap">
       <BoxWrapper>
         <span className="absolute top-0 right-0 mr-4 font-bold text-[#b2b7c5]">
           ...

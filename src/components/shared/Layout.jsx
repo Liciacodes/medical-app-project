@@ -5,7 +5,7 @@ import Header from "./Header";
 
 const Layout = () => {
   return (
-    <div className="flex bg-[#f5f6fa] lg:w-screen lg:h-screen">
+    <div className="flex bg-[#f5f6fa] w-screen h-screen gap-0">
       <SideBar />
 
       <div className="flex-1">
